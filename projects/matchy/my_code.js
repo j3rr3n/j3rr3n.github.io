@@ -79,7 +79,7 @@ animals[3]["friends"] = friends;
 
 function search(name) {
     for(var i = 0; i < animals.length; i++){
-    if(name===animals[i]['name']) {
+    if(name.toLowerCase()===animals[i]['name'].toLowerCase()) {
         return animals[i];
         }
     } return null;
@@ -102,12 +102,3 @@ function remove(name) {
     } 
 }
 
-function create(object) {
-    for(var i = 0; i < animals.length; i++){
-    if(object.name.length > 0)
-    if(object.species.length > 0)
-    if(object!==animals[i]['name']) {
-       return animals.push(object);
-        }
-    } 
-}
