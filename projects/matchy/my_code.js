@@ -102,3 +102,13 @@ function remove(name) {
     } 
 }
 
+function create(obj){
+    if(obj.name.length > 0 && obj.species.length > 0){
+        for(var i=0;i < animals.length;i++){
+            if(animals[i]['name'].toLowerCase() === obj.name.toLowerCase()){
+                return null;
+            }
+        }
+    } return animals.push(obj);
+}
+create();
