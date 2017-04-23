@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="bower_components/lodash/lodash.min.js"></script>
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="css/custom.css" type="text/css" />
-        <script type="text/javascript" src="bower_components/notes/notes.js"></script>
-        <script type="text/javascript" src="js/lib/spin.min.js"></script>
-        <script type="text/javascript" src="js/view/pacifier.js"></script>
-        <script type="text/javascript" src="js/products.js"></script>
-        <title>Product Project</title>
-    </head>
-    <body>
-        <div id="container" class="container">
-            <nav>
-                <h1>Product Project</h1>
-            </nav>
-            <main>
-                
-            </main>
-            
-        </div>
-        <script>
-            $(function () {
-                window.opspark.notes.show();
-            });
-        </script>
-    </body>
+
+<head>
+
+    <script src="bower_components/lodash/lodash.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <script type="text/javascript" src="bower_components/notes/notes.js"></script>
+    <script type="text/javascript" src="js/lib/spin.min.js"></script>
+    <script type="text/javascript" src="js/view/pacifier.js"></script>
+    <script type="text/javascript" src="js/products.js"></script>
+    <title>Product Project</title>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <nav>
+            <h1>Product Project</h1>
+        </nav>
+        <main>
+            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">filter results
+  <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                </ul>
+            </div>
+        </main>
+
+    </div>
+    <script>
+        $(function() {
+            window.opspark.notes.hide();
+        });
+    </script>
+</body>
+
 </html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/notes/notes.js"></script>
+    <title>A Well of HTML</title>
+    <style type="text/css">
+        
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <!-- ALL YOUR MARKUP GOES BELOW HERE -->
+        <a href="https://en.wikipedia.org/wiki/Meditations"></a>
+        <img src="https://cdn-images-1.medium.com/max/1200/0*6G9_ZtUzOQ191MOj.jpg" />
+        <h1>Studio Ghibli</h1><h2>And</h2><h3>The</h3><h4>Amazing Works</h4><h5>of</h5><h6>Miyazaki.</h6>
+        <p>
+            The name <b>Ghibli</b> was given by Hayao Miyazaki from the Italian noun <i>"ghibli"</i>, based on the Libyan-Arabic name for the <em>hot desert wind</em> of that country, the idea being the studio would <strong>"blow a new wind through the anime industry"</strong>.
+        </p>
+        
+        <h3 class="first">Top 3 Films:</h3>
+        <div class="first">
+        <ol>
+            <li>Spirited Away</li>
+            <li>Princess Mononoke</li>
+            <li>Howl's Moving Castle</li>
+        </ol>
+        </div>
+        <h3 class="second">A Few Other Films:</h3>
+         <div class="second">
+        <ul>
+            <li>Wind Rises</li>
+            <li>Nausicaa</li>
+            <li>Castle in the Sky</li>
+        </ul>
+        </div>
+        <!--FORM TIME-->
+        <form class="example-form">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" />
+    </div>
+    <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg"></textarea>
+    </div>
+
+    <div class="button">
+        <button type="submit">Send your message</button>
+    </div>
+</form>
+     <!--TABLE TIME-->
+        <table>
+    <thead>
+        <tr>
+            <th>FILM TITLE</th>
+            <th>RELEASE YEAR</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="2">older works from GHIBLI</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Grave of Fireflies</td>
+            <td>1987</td>
+        </tr>
+        <tr>
+            <td>My Neighbor Totoro</td>
+            <td>1995</td>
+        </tr>
+    </tbody>
+</table>
+        
+        <!--That DIV tho-->
+    <div class="flex-row">
+    <div>TO</div>
+    <div>DEFINE</div>
+    <div>IS</div>
+    <div>TO</div>
+    <div>LIMIT</div>
+    </div>
+        
+        
+        <!--THAT GRID THO-->
+<div class="example-grid">
+    <div class="row">
+         <div class="col-md-2"><img src="img/cherries.jpg" class="row-img"></img>
+         </div>
+         <div class="col-md-10">some CHERRIES(:</div>
+    </div>
+    <div class="row">
+         <div class="col-md-2"><img src="img/black-currant.jpg" class="row-img"></img>
+         </div>
+         <div class="col-md-10">That CURRANT Tho(:</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"><img src="img/apple-in-grass.jpg" class="row-img"></img>
+        </div>
+        <div class="col-md-10">APP in GRASS(:</div>
+    </div>
+</div>
+       
+        <!-- ALL YOUR MARKUP GOES ABOVE HERE -->
+    </div>
+    <script>
+        $(function () {
+            window.opspark.notes.show();
+        });
+    </script>
+</body>
+
+</html>
